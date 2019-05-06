@@ -29,4 +29,4 @@ test2: $(TARGET)
 	./client google.com 80
 
 clean: # remove all machine generated files
-	rm -f $(TARGET) $(OBJS) 
+	rm -f $(TARGET) $(OBJS) -f -r  .vscode ../.vscode
