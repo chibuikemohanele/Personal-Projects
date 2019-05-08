@@ -50,6 +50,7 @@ int main(int argc, char ** argv){
         return EXIT_FAILURE;
     } 
 
+    
     //Entering message to send to socket
     cout << "Please enter the message: " <<endl;
     bzero(buffer, 256);
@@ -59,15 +60,14 @@ int main(int argc, char ** argv){
         cout << "ERROR writing to socket." <<endl;
         return EXIT_FAILURE;
     }
-
-    //Reading message returned by server socket
+    
     bzero(buffer, 256);
     n = read(sockfd, buffer, 255);
     if(n < 0){
         cout << "ERROR reading from socket." <<endl;
         return EXIT_FAILURE;
     } 
-    cout << buffer;
+    cout << buffer << endl;
         
     //Closing sockets
     delete[](buffer);
