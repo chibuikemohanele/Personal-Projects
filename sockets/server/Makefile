@@ -26,4 +26,4 @@ test1: $(TARGET)
 	./server 2000
 
 clean: # remove all machine generated files
-	rm -f $(TARGET) $(OBJS) -f -r  .vscode ../.vscode
+	rm -f $(TARGET) $(OBJS) -rf  .vscode ../.vscode

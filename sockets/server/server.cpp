@@ -28,7 +28,7 @@ int main(int argc, char ** argv){
     //Creating TCP socket
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if(sockfd < 0){
-        cout << "Socket fild descripto is invalid." << endl;
+        cout << "Socket field description is invalid." << endl;
         return EXIT_FAILURE;
     }
 

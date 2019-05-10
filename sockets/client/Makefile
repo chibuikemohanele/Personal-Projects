@@ -26,7 +26,7 @@ test1: $(TARGET)
 	./client localhost 2000
 
 test2: $(TARGET)
-	./client google.com 80
+	./client cnn.com 80
 
 clean: # remove all machine generated files
 	rm -f $(TARGET) $(OBJS) -f -r  .vscode ../.vscode
